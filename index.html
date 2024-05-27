@@ -2,339 +2,177 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
+    <title>Portfolio</title>
+
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Dosis:wght@500;600;700;800&family=Inter:wght@300;400;500;600;700;800;900&family=Lobster&family=Prompt:wght@100&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <nav id="desktop-nav">
-      <div class="logo">
-        <img src="logo.png">
+    <header>
+      <!-- <a href="#" class="logo"><img src="Screenshot 2024-05-27 084153.png" /></a>
+      <div class="bx bx-menu" id="menu-icon"></div> -->
+
+      <ul class="navlist">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#project">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </header>
+
+    <section class="home" id="home">
+      <div class="hero-text">
+        <h3>Hello I'm</h3>
+        <h1>Rishabh Sharma</h1>
+        <h4>Web Developer - Java Developer</h4>
+        <a href="resume.pdf" class="btn">Resume</a>
+
       </div>
-      <div>
-        <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#Skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Rishabh Sharma</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-            <li><a href="#home" onclick="toggleMenu()">Home</a></li>
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#Skills" onclick="toggleMenu()">Skills</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
-      </div>
-    </nav>
-    <section id="profile">
       <div class="section__pic-container">
-        <img src="profile2.png" alt="Rishabh Sharma profile picture" />
+        <img src="Profile.jpg" alt="Rishabh Sharma profile picture" />
       </div>
-      <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Rishabh Sharma</h1>
-        <p class="section__text__p2">Web Developer</p>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('Resume.docx', '_blank')"
-          >
-            Download Resume
-          </button>
-          <button class="btn btn-color-2" onclick="location.href='./#contact'">
-            Contact Info
-          </button>
+    </section>
+
+    <section class="About" id="about">
+        <div class="about-img">
+            <img src="profile2.jpg">
         </div>
-        <div id="socials-container">
+
+        <div class="about-text">
+            <h2>About me</h2>
+            <p> I am an Aspiring <b>Web Developer</b> with a passion for creating intuitive and visually appealing digital experiences. With a strong command of front-end development, I am skilled in turning designs into responsive and dynamic websites. Currently, I am immersing myself in the world of UI/UX design to further enhance my ability to craft user-centered interfaces that seamlessly merge aesthetics with functionality.
+            </p>
+            <div id="socials-container">
+                <img
+                  src="linkdin_blue.png"
+                  alt="My LinkedIn profile"
+                  class="icon"
+                  onclick="location.href='https://www.linkedin.com/in/rishabh2511/'"
+                />
+                
+                <img
+                  src="github_black.png"
+                  alt="My Github profile"
+                  class="icon"
+                  onclick="location.href='https://github.com/Rishabhsharma25'"
+                />
+              </div>
+        </div>
+    </section>
+
+    <section class="project" id="project">
+      <div class="text-center">
+        <h2>My Projects</h2>
+      </div>
+      <div class="project-item">
+        <div class="project-box">
+          <img src="Screenshot 2023-08-31 145006.png">
+          <h3>BarCost</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+        <div class="github">
           <img
-            src="linkdin_blue.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="location.href='https://www.linkedin.com/in/rishabh2511/'"
-          />
-          
-          <img
+          src="github_black.png"
+          alt="My Github profile"
+          class="github"
+          onclick="location.href='https://github.com/Rishabhsharma25'"/>
+        </div> 
+        </div>
+
+        <div class="project-box">
+          <img src="vnex.jpeg" alt="">
+          <h3>VNEX</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <div class="github">
+            <img
             src="github_black.png"
             alt="My Github profile"
-            class="icon"
-            onclick="location.href='https://github.com/Rishabhsharma25'"
-          />
+            class="github"
+            onclick="location.href='https://github.com/Rishabhsharma25'"/>
+          </div>
         </div>
+
+        <div class="project-box">
+          <img src="landing page.png" alt="">
+          <h3>Lannding page</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+          <div class="github">
+            <img
+            src="github_black.png"
+            alt="My Github profile"
+            class="github"
+            onclick="location.href='https://github.com/Rishabhsharma25'"/>
+          </div>
+        </div>
+
+        <div class="project-box">
+          <img src="calculator.png">
+          <h3>Calculator</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+          <div class="github">
+            <img
+            src="github_black.png"
+            alt="My Github profile"
+            class="github"
+            onclick="location.href='https://github.com/Rishabhsharma25'"/>
+          </div>
+       
       </div>
-      <!-- <img
-        src="arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      /> -->
     </section>
-    <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
-        <div class="section__pic-container">
-          <img
-            src="pro.jpg"
-            alt="Profile picture"
-            class="about-pic"
-          />
-        </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="school.png"
-                alt="School icon"
-                class="icon"
-              />
-              <h3>School</h3>
-              <p>Sunflower School, Harda<br />10th - 2019 (Grade - 78%)<br />12th - 2021 (Grade - 88%)</p>
-            </div>
-            <div class="details-container">
-              <img
-                src="colloge.png"
-                alt="colloge icon"
-                class="icon"
-              />
-              <h3>College</h3>
-              <p>Vellore institute of technology, Bhopal<br />B.tech with CSE Core<br>2021 - 2025</p>
-            </div>
-          </div>
-          <div class="text-container">
-            <p>
-              I am an aspiring web developer with a passion for creating intuitive and visually appealing digital experiences. With a strong command of front-end development, I am skilled in turning designs into responsive and dynamic websites. Currently, I am immersing myself in the world of UI/UX design to further enhance my ability to craft user-centered interfaces that seamlessly merge aesthetics with functionality.
-            </p>
-          </div>
-        </div>
-      </div>
-   
-    </section>
-    <section id="Skills">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Skills</h1>
-      <div class="skills-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-          
-            <div class="article-container">
-              <article class="article-container-1">
-                <img
-                  src="html (1).svg"
-                  alt="skills icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>HTML</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="css.png"
-                  alt="skills icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>CSS</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article >
-                <img
-                  src="js.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>JavaScript</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <br>
-              <article>
-                <img
-                  src="sql.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>SQL</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="python.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Python</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-         
-            </div>
-          </div>
-         
-      </div>
-   
-    </section>
-    <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
-      <div class="skills-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="barcost.jpg"
-                alt="Project 1"
-                class="project-img"
-              />
-            </div>
-            <h2 class="skills-sub-title project-title">Barcost</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="vnex.jpeg"
-                alt="Project 2"
-                class="project-img"
-              />
-            </div>
-            <h2 class="skills-sub-title project-title">VNEX</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="landing page.png"
-                alt="Project 3"
-                class="project-img-2"
-              />
-            </div>
-            <h2 class="skills-sub-title project-title">Landing Page</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="calculator.png"
-                alt="Project 3"
-                class="project-img-2"
-              />
-            </div>
-            <h2 class="skills-sub-title project-title">Calculator</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-        </div>
-        </div>
-      </div>
-      
-    </section>
+
     <section id="contact">
       <p class="section__text__p1">Get in Touch</p>
       <h1 class="title">Contact Me</h1>
       <div class="contact-info-upper-container">
         <div class="contact-info-container">
           <img
-            src="email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="mailto:rishabh.s2511@gmail.com">rishabh.s2511@gmail.com</a></p>
+                  src="email.png"
+                  alt="email"
+                  class="icon"
+                  onclick="location.href='rishabh.s2511@gmail.com'"
+                />
         </div>
         <div class="contact-info-container">
           <img
-            src="linkdin_blue.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://www.linkedin.com/in/rishabh2511/">LinkedIn</a></p>
+                  src="linkdin_blue.png"
+                  alt="My LinkedIn profile"
+                  class="icon"
+                  onclick="location.href='https://www.linkedin.com/in/rishabh2511/'"
+                />
         </div>
+        <div class="contact-info-container">
+          <img
+          src="github_black.png"
+          alt="My Github profile"
+          class="icon"
+          onclick="location.href='https://github.com/Rishabhsharma25'"/>
+        </div>
+        </div>   
       </div>
     </section>
-    <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
-      <p>Copyright &#169; 2023 Rishabh Sharma. All Rights Reserved.</p>
-    </footer>
+
+    <section class="contact" id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="end-icons">
+<a href="#"><i class="bx bxl-facebook"></i></a>
+<a href="#"><i class="bx bxl-instagram-alt"></i></a>
+<a href="#"><i class="bx bxl-twitter"></i></a>
+<a href="#"><i class="bx bxl-youtube"></i></a>
+      </div>
+    </section>
+    
+
     <script src="script.js"></script>
   </body>
 </html>
